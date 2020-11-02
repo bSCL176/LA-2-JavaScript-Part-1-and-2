@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+
+<h1>Learning Activity 2: JS Basics Program</h1>
+<h2 align="center"> Part I</h2>
+<body>
+
+<div>
+		<div>
+			<h2 align="center">Learning Activity-2 Part II</h2> <br />
+		<h5>1- Write a simple program that displays all odd numbers from 50 to 100 using a while loop.</h5>
+	    </br>
+		<script type="text/javascript">
+			
+			var a=51;
+
+			   			
+    		do {       			
+       			
+       			document.write (a)
+       			a=a+2
+       			document.write("<br />")
+    			}
+			while (a<=99)
+
+		</script>
+
+		</div>
+		<div>
+			<h5>2- Write a simple program that displays a triangle nested loop.</h5>
+	    	</br>
+		<script type="text/javascript">
+
+			var p="";
+
+			for(r=1; r <=10; r++)
+			{
+  		    	for (c=1; c < r; c++)
+    		   		{
+    			 		 p=p+("#")
+    			  	
+     	 	    	}
+ 			document.write (p)
+ 			document.write ("<br />")
+ 			var p=''    
+			}
+    							
+    	</script>
+
+		</div>
+
+
+		<div>
+	
+			<h5> 3- Write a simple JS function that displays “Hello World”.</h5>
+
+			
+
+			<p id="hel"></p>
+			 
+		<script type="text/javascript">
+			
+			
+   			document.getElementById("hel").innerHTML = "Hello World" ;		
+    	
+   			 
+
+
+		</script>
+
+		</div>
+		
+		<div>
+	
+			
+			<h5>4- Write a simple web application that accepts your full name, and welcomes you saying, 
+				“Welcome your name”. Make sure you add some style to make it look good.</h5>
+	    	</br>
+	    	<label>
+   				 Enter your name
+  			</label>
+  			<input type="text" id="yrName">
+  			<button onclick="greetd();">Greeting</button>
+  			<p id="greeting1"></p>
+  			<br /><br />
+		<script type="text/javascript">
+
+			 function greeting(yrName) {
+      		this.yrName = yrName; }    
+
+    
+
+    		function greetd(){
+     		 var yrName = document.getElementById('yrName').value;
+      
+     
+     		 document.getElementById("greeting1").innerHTML = "Welcome " + yrName;
+   			 }
+
+    							
+    				
+    				
+
+		</script>
+
+		</div>
+
+</div>
+</body>
+</html> 

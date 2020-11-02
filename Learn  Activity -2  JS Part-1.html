@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+
+<h1>Learning Activity 2: JS Basics Program</h1>
+<h2 align="center"> Part I</h2>
+<body>
+
+<div>
+	<h5> 1- Create a simple JS line of code that displays “Hello World” on the console. </h5>
+	</br>
+	<div>
+	<!--1- Create a simple JS line of code that displays “Hello World” on the console. -->
+
+	<script type="text/javascript">
+	
+	
+ 		console.log ("Hello World.")
+ 	
+	</script>
+
+	</div>
+
+	<div>
+	<!--2- Modify question 1 by adding a comment, variable, and attach it to an HTML element to display the message on browser. -->
+	<h5> 2- Modify question 1 by adding a comment, variable, and attach it to an HTML element to display the message on browser. </h5>
+	</br>
+	<script type="text/javascript">
+	
+	 		document.write("Hello class, this is javascript output.");
+	</script>
+
+	</div>
+
+
+	<div>
+	<!--3- Write a simple JS code that prints your full name. -->
+	<h5> 3- Write a simple JS code that prints your full name. </h5>
+	</br>
+	<script type="text/javascript">
+	
+	 		document.write("Tariq Baig");
+	</script>
+
+	</div>
+
+	<div>
+	<!--4- Write a simple JS program that compares two values x and y. Assume x = 234 and y = 300. Your program should display a message that indicates the smallest value and the largest value. -->
+	<h5> 4- Write a simple JS program that compares two values x and y. Assume x = 234 and y = 300. Your program should display a message that indicates the smallest value and the largest value. </h5>
+	</br>
+	<script type="text/javascript">
+	
+	 		
+
+					 x=234;
+					 y=300;
+
+				if(x < y ){
+					document.write (x+" is the smallest; ") 
+					
+					 }
+					
+				
+				if (y>x){
+					document.write (y+" is the largest.")
+				}
+				
+	</script>
+
+	</div>
+
+	
+
+	<div>
+ 	<!--5- Write a simple JS program that compares three values x, y, z. You can give any random number for those three variables. The code should display which number has a larger value and which one has a smaller value, among the three. -->
+ </br>
+ 	<h5>4-Write a simple JS program that compares three values x, y, z. You can give any random number for those three variables. The code should display which number has a larger value and which one has a smaller value, among the three.</h5>
+
+		<label for="number3">
+			Enter Number 1:
+		</label>
+		<input type="text" id="number3">
+		<label for="number4">
+			Enter Number 2:
+		</label>
+		<input type="text" id="number4">
+		<label for="number5">
+			Enter Number 3:
+		</label>
+		<input type="text" id="number5">
+		<button onclick="smallest();">smallest</button>
+		<button onclick="largest();">largest</button>
+		<p id="small"></p>
+		<p id="large"></p>
+		<script type="text/javascript">
+			function smallest(){
+				const firstNumber = parseFloat(document.getElementById("number3").value);
+				const secondNumber = parseFloat(document.getElementById("number4").value);
+				const thirdNumber = parseFloat(document.getElementById("number5").value);
+
+
+
+				if(firstNumber < secondNumber && firstNumber < thirdNumber){
+					document.getElementById("small").innerHTML = firstNumber + " is the smallest";
+				}
+				else if (secondNumber < thirdNumber){
+					document.getElementById("small").innerHTML = secondNumber + " is the smallest";
+				}
+				else {
+					document.getElementById("small").innerHTML = thirdNumber + " is the smallest";
+				}
+			}
+
+			 function largest(){
+				const firstNumber = parseFloat(document.getElementById("number3").value);
+				const secondNumber = parseFloat(document.getElementById("number4").value);
+				const thirdNumber = parseFloat(document.getElementById("number5").value);//
+
+
+				if(firstNumber > secondNumber && firstNumber > thirdNumber){
+					document.getElementById("large").innerHTML = firstNumber + " is the largest";
+				}
+				else if (secondNumber > thirdNumber){
+					document.getElementById("large").innerHTML = secondNumber + " is the largest";
+				}
+				else {
+					document.getElementById("large").innerHTML = thirdNumber + " is the largest";
+				}
+			}
+		</script> 
+
+
+		</div>
+		
+		<div>
+		<h5>5- Write a simple JS program that displays all the numbers from 1 to 10 using a for loop.</h5>
+	    </br>
+		<script type="text/javascript">
+			//Write a simple JS program that displays all the numbers from 1 to 10 using a for loop.
+
+			for(var z = 1; z <=10; z++)
+			{
+				document.write ("<p>" + z + "</p>");
+			}
+		</script>
+
+		</div>
+
+			
+		<div>
+		<h5>6- Write a program that display all even numbers from 0 to 10 using a for loop.</h5>
+	    </br>
+		<script type="text/javascript">
+			//Write a program that display all even numbers from 0 to 10 using a for loop.
+
+			var i=2
+			for (i;i<12; i=i+2){  
+    		document.write(i);
+    		document.write("<br />")
+    		}
+		</script>
+
+		</div>
+
+		
+		
+			
+
+
+</div>
+</body>
+</html> 
